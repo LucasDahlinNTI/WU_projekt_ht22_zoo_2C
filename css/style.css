@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: initial;
+}
+
+#grid_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 1fr 100px;
+    grid-template-areas: 
+    "he he he na"
+    "ma ma ma ma"
+    "fo fo fo fo";
+}
+
+header{
+    grid-area: he;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: x-large;
+    padding: 20px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: na;
+    color: white;
+}
+
+main{
+    grid-area: ma;
+    display: flex;
+    color: white;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: white;
+    grid-area: fo;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    background:rgba(0,0,0,0.7) url("../img/egen_valda/Background_2.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#a_nav{
+    color: white;
+    text-decoration: none;  
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+
+#a_nav:hover{
+    text-decoration-color: rgb(255, 0, 0);
+    text-underline-offset: 5px;
+}
+
+.huvud_text{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    line-height: 50px;
+}
+
+#text_start{
+    font-size: smaller;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+#länk_start{
+background-color: rgb(171, 14, 14, 0.5);
+color: white;
+text-decoration: none;
+border-radius: 10px;
+width: 300px;
+height: 100px;
+padding: 20px;
+border: 1px solid;
+border-color: transparent;
+line-height: 100px;
+transition: all 2s;
+}
+
+#länk_start:hover{
+    background-color: rgb(171, 14, 14, 1);
+    border-color: white;
+}
