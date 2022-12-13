@@ -18,11 +18,24 @@
 header{
     grid-area: he;
     display: flex;
-    justify-content: left;
+    justify-content:left;
     align-items: center;
     font-size: x-large;
     padding: 20px;
     color: white;
+    position: relative;
+    width: 200px;
+}
+
+#bild1{
+    height: 100px;
+    width: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+h1{
+
 }
 
 nav{
@@ -34,7 +47,7 @@ nav{
     color: white;
 }
 
-main{
+#main_start{
     grid-area: ma;
     display: flex;
     color: white;
@@ -59,19 +72,19 @@ body{
     background-blend-mode: darken;
 }
 
-#a_nav{
+.a_nav{
     color: white;
     text-decoration: none;  
     text-decoration: underline 0.15em rgba(0, 0, 0, 0);
-    transition: text-decoration-color 300ms;
+    transition: 300ms;
 }
 
-#a_nav:hover{
+.a_nav:hover{
     text-decoration-color: rgb(255, 0, 0);
     text-underline-offset: 5px;
 }
 
-.huvud_text{
+#huvud_text{
     font-family: Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     line-height: 50px;
@@ -101,3 +114,102 @@ transition: all 2s;
     background-color: rgb(171, 14, 14, 1);
     border-color: white;
 }
+
+#grid_wrapper2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". s1 s2 s3 ."
+    ". s4 s5 s6 ."; 
+}
+
+#main_resturang{
+    grid-area: ma;
+    display: grid;
+    background-color: aquamarine;
+    padding: 50px;
+    justify-items: space-between;
+}
+#s1{
+    grid-area: s1;
+    background-color: aqua;
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-bottom: 10px;  
+    background-image: url("../img/egen_valda/fisk1.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+
+#s2{
+    grid-area: s2;
+    background-color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    background-image: url("../img/egen_valda/fisk2.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+
+#s3{
+    grid-area: s3;
+    background-color: chartreuse;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    background-image: url("../img/egen_valda/fisk3.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+
+#s4{
+    grid-area: s4;
+    background-color: pink;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: url("../img/egen_valda/fisk4.jpg");
+    background-size: cover;
+}
+
+#s5{
+    grid-area: s5;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: url("../img/egen_valda/fisk5.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+#s6{
+    grid-area: s6;
+    background-color: darkorange;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: url("../img/egen_valda/fisk6.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.card{
+    display: flex;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transition: 2000ms;
+    color: transparent;
+    justify-content: center;
+    align-items: center;
+    filter: none;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 15px white;
+    transform: scale(1,1.2);
+    color: white;
+    filter: blur(2px);
+  }
