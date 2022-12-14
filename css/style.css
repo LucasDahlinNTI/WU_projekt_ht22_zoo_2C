@@ -34,9 +34,7 @@ header{
     padding-left: 10px;
 }
 
-h1{
 
-}
 
 nav{
     display: flex;
@@ -115,25 +113,21 @@ transition: all 2s;
     border-color: white;
 }
 
-#grid_wrapper2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    ". s1 s2 s3 ."
-    ". s4 s5 s6 ."; 
+
+.main_resturang{
+    grid-area: ma;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
 }
 
-#main_resturang{
-    grid-area: ma;
-    display: grid;
-    background-color: aquamarine;
-    padding: 50px;
-    justify-items: space-between;
-}
 #s1{
-    grid-area: s1;
-    background-color: aqua;
     margin-left: 10px;
     margin-right: 10px; 
     margin-bottom: 10px;  
@@ -143,8 +137,6 @@ transition: all 2s;
 }
 
 #s2{
-    grid-area: s2;
-    background-color: red;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px; 
@@ -154,8 +146,6 @@ transition: all 2s;
 }
 
 #s3{
-    grid-area: s3;
-    background-color: chartreuse;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px; 
@@ -165,18 +155,15 @@ transition: all 2s;
 }
 
 #s4{
-    grid-area: s4;
-    background-color: pink;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     background-image: url("../img/egen_valda/fisk4.jpg");
     background-size: cover;
+    background-position-y: center;
 }
 
 #s5{
-    grid-area: s5;
-    background-color: black;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -186,8 +173,6 @@ transition: all 2s;
 }
 
 #s6{
-    grid-area: s6;
-    background-color: darkorange;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -200,16 +185,29 @@ transition: all 2s;
     display: flex;
     border-radius: 50px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    transition: 2000ms;
+    transition: 1000ms;
     color: transparent;
-    justify-content: center;
+justify-content: center;
     align-items: center;
-    filter: none;
+    background-blend-mode: darken;
+    background: none;
+    height: 180px;
+    width: 300px;
+    padding: 10px;
 }
 
 .card:hover {
     box-shadow: 5px 5px 15px white;
-    transform: scale(1,1.2);
+    transform: scale(1.2,1.2);
     color: white;
-    filter: blur(2px);
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  strong{
+    font-size: larger;
+  }
+
+  em{
+    padding-left: 440px;
+    padding-top: 70px;
   }
