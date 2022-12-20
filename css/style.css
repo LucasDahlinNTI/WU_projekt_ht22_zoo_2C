@@ -203,12 +203,101 @@ justify-content: center;
     background: rgba(0, 0, 0, 0.7);
   }
 
-  strong{
+strong{
     font-size: larger;
   }
 
-  em{
+em{
     padding-left: 440px;
     padding-top: 70px;
     font-size: larger;
   }
+
+#grid_wrapper2{
+    grid-area: ma;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10px 100px 1fr 1fr 50px;
+    grid-template-areas: 
+    "s1 s1 s2 s2"
+    "s1 s1 s2 s2"
+    "s3 s4 s4 s5"
+    "s3 s4 s4 s5"
+    "s6 s6 s7 s7";
+  }
+
+#om_oss_s1{
+    grid-area: s1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 900;
+    color: white;
+    text-decoration: underline overline 0.15em;
+    font-style: italic;
+    text-underline-offset: 7px;
+  }
+
+#om_oss_s2{
+    grid-area: s2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 900;
+    color: white;
+    text-decoration: underline overline 0.15em;
+    font-style: italic;
+    text-underline-offset: 7px;
+}
+#om_oss_s3{
+    grid-area: s3;
+    color: white;
+    font-size: large;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+#om_oss_s4{
+    grid-area: s4;
+    background: url(../img/egen_valda/personal.jpg);
+    background-size: cover;
+    background-position-y:-55px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.9);
+}
+
+#om_oss_s5{
+    grid-area: s5;
+    color: white;
+    font-size: large;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+#om_oss_s6{
+    grid-area: s6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: x-large;
+    color: white;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+#om_oss_s7{
+    grid-area: s7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: x-large;
+    color: white;
+    font-style: oblique;
+    text-decoration: underline;
+}
