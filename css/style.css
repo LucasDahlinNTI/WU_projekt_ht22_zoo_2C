@@ -183,7 +183,7 @@ transition: all 2s;
 
 .card{
     display: flex;
-    border-radius: 50px;
+    border-radius: 30px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     transition: 1000ms;
     color: transparent;
@@ -210,4 +210,5 @@ justify-content: center;
   em{
     padding-left: 440px;
     padding-top: 70px;
+    font-size: larger;
   }
